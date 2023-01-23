@@ -36,7 +36,7 @@ main {
 }
 
 .left-content {
-  width: 50vw;
+  width: 40vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,11 +51,12 @@ main {
 
 .left-content img {
   margin-top: 50px;
-  width: 50%;
+  width: 70%;
 }
 
 .right-content {
-  width: 50vw;
+  width: 60vw;
+  height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,10 +68,11 @@ main {
   align-items: center;
   flex-direction: column;
   width: 80%;
+  height: 100%;
   padding: 30px;
   background: #2f2841;
   border-radius: 20px;
-  box-shadow: 0px 0px 15px #000;
+  box-shadow: 0px 0px 10px #000;
 }
 
 .card-login h1 {
@@ -82,7 +84,7 @@ main {
 .textfield {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   width: 80%;
   margin: 15px 0;
@@ -91,13 +93,14 @@ main {
 .textfield input {
   font-family: 'Montserrat', sans-serif;
   width: 100%;
+  height: 70px;
   border: 2px solid transparent;
   border-radius: 10px;
   padding: 15px;
   background: #514869;
   color: #fff;
   font-size: 1.1rem;
-  box-shadow: 0px 10px 40px #00000056;
+  box-shadow: 0px 4px 5px #00000056;
   outline: 0;
 }
 
@@ -107,47 +110,53 @@ main {
 
 .textfield input:focus {
   transition: ease all 0.3s;
-
   border: 2px solid rgba(187, 187, 187, 0.2);
   box-shadow: 0px 0px 10px #ffffff56;
-
 }
 
+button {
+  border: none;
+}
 
 .btn-login {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 1.2rem;
   width: 80%;
+  height: 70px;
   padding: 14px 0;
   background-color: #00F77B;
-  border: none;
-  box-shadow: 0px 2px 1px rgba(0, 245, 121, 0.25);
+  border-bottom: 2px solid #00b45a;
   border-radius: 5px;
   cursor: pointer;
-  outline: none;
+  outline: 0;
   letter-spacing: 1px;
+  color: #000;
 }
 
+.btn-login:hover {
+  background-color: #00c462;
+}
+
+.btn-login:active {
+  padding: 13px 0;
+  width: 79%;
+}
 
 @media (max-width: 800px) {
   .main-login {
     flex-wrap: wrap;
     height: 80%;
+    padding: 70px 0;
   }
 
   .left-content {
     width: 90vw;
   }
 
-  .left-content h1 {
-    font-size: 1.5rem;
-
-  }
-
   .left-content img {
     margin-top: 30px;
-    width: 70%;
+    width: 65%;
   }
 
   .right-content {
@@ -161,12 +170,57 @@ main {
   .textfield {
     width: 100%;
     margin: 10px 0;
-
   }
 
   .btn-login {
     width: 100%;
+  }
+}
 
+
+@media (max-width: 500px) {
+  body {
+    background-color: #201b2c;
+  }
+
+  .main-login {
+    flex-wrap: wrap;
+    width: 100%;
+    height: 65%;
+    background-color: #2f2841;
+    border-radius: 0;
+  }
+
+  .left-content {
+    width: 90vw;
+  }
+
+  .left-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .left-content img {
+    margin-top: 30px;
+    width: 80%;
+  }
+
+  .right-content {
+    width: 100vw;
+  }
+
+  .card-login {
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0px;
+  }
+
+  .textfield {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .btn-login {
+    width: 100%;
   }
 
 
