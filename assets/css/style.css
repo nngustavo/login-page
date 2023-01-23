@@ -80,12 +80,12 @@ main {
 }
 
 .textfield {
-  width: 80%;
-  margin: 15px 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  width: 80%;
+  margin: 15px 0;
 }
 
 .textfield input {
@@ -127,4 +127,54 @@ main {
   cursor: pointer;
   outline: none;
   letter-spacing: 1px;
+}
+
+
+@media (max-width: 800px) {
+  .main-login {
+    flex-wrap: wrap;
+    height: 80%;
+  }
+
+  .left-content {
+    width: 90vw;
+  }
+
+  .left-content h1 {
+    font-size: 1.5rem;
+
+  }
+
+  .left-content img {
+    margin-top: 30px;
+    width: 70%;
+  }
+
+  .right-content {
+    width: 100vw;
+  }
+
+  .card-login {
+    width: 90%;
+  }
+
+  .textfield {
+    width: 100%;
+    margin: 10px 0;
+
+  }
+
+  .btn-login {
+    width: 100%;
+
+  }
+
+
+
+
+
+
+
+
+
 }
